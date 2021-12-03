@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="shortcut icon" href="img/iso.png">
+    <title>Orientacion</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+     <div class="container">
+      <header1>
+        <nav class="navOrigen">
+          <img src="img\iso.png" alt="loading" class="iso">
+          <!--<input type="text" name="txtBusqueda" placeholder="BUSCAR" class="txtInput">-->
+
+        <!---  <a href="../Filtrando elemetos/index.html">PRODUCTOS</a> -->
+          <a href="../Menu multinivel/index.html">ARMA TU PC</a>
+          <a href="../../proyecto/Index.html">INICIO</a>
+        
+        </nav>
+      </header1>
+      <br>
+
+    <h1>CUESTIONARIO DE ORIENTACION</h1>
+
+
+
+    <div id="Pregunta1">
+        <br>
+
+        <h2>Desde ya le aclaramos que el sistema operativo en el que trabajaremos sera Windows 10.</h2>
+        <img src="img/w10w.png" id="windows">
+        <h3>Windows 7 ha dejado de recibir actualizaciones de mantenimiento.</h3>
+        <img src="img/w7w.png" id="windows">
+
+        <br> <br> <br><br>
+
+        <img src="img/Pensando.png"  id="imgback">
+        <br> 
+        <p>
+            
+           <b> 1. ¿Qué planeas hacer en tu futura pc? </b><br>
+            <br><input type="radio" onclick="mostrarPreg1A(); ocultarPreg1B(); ocultarPreg1C(); ocultarPregunta1();" name="preg1" value="a" id="name">a. Estudio <br> <br>
+            <input type="radio" onclick="mostrarPreg1B(); ocultarPreg1A(); ocultarPreg1C(); ocultarPregunta1();" name="preg1" value="b">b. Trabajo <br> <br>
+            <input type="radio" onclick="mostrarPreg1C(); ocultarPreg1A(); ocultarPreg1B(); ocultarPregunta1();" name="preg1" value="c">c. Entretenimiento <br> <br>
+            
+        </p>
+
+    </div>
+
+    <script>
+
+        function ocultarPregunta1() {
+
+            document.getElementById('Pregunta1').style.display = 'none';
+            
+        }
+
+        function mostrarPregunta1() {
+
+            document.getElementById('Pregunta1').style.display = 'block';
+
+        }
+
+    </script>
+
+    <script>
+        function mostrarPreg1A(){
+
+            document.getElementById('Pregunta1A').style.display = 'block';
+        }
+
+        function ocultarPreg1A(){
+        document.getElementById('Pregunta1A').style.display = 'none';
+    }
+    </script>
+   
+    <style>
+        #Pregunta1A{
+            display: none;
+        }
+    </style>
+
+    <div id="Pregunta1A">
+        
+        <P>
+          <b> 1. a.  Su estudio es de: </b><br> 
+            <br><input type="radio" onclick="mostrarPresup1A(); ocultarPresup1B();" name="preg1a" value="a">a. Investigacion ofimatica (Excel, Word, etc)<br> <br>
+            <input type="radio" onclick="mostrarPresup1B(); ocultarPresup1A();" name="preg1a" value="b">b. Graficacion 2D / 3D <br> <br>
+            <button id="Atras" onclick="ocultarPreg1A(); ocultarPresup1A(); ocultarPresup1B(); mostrarPregunta1();">VOLVER A PREGUNTA 1</button> <br> <br>
+        </P>
+
+    </div>
+
+    <script>
+       function mostrarPresup1A() {
+            document.getElementById('Presup1A').style.display = 'block';
+        }
+        function ocultarPresup1A() {
+            document.getElementById('Presup1A').style.display = 'none';
+        } 
+
+    </script>
+
+    <style>
+        #Presup1A {
+            display: none;
+        }
+
+    </style>
+
+    <div id="Presup1A">
+        
+        <p>
+             <br><header id="xd"><b>Procesador Intel Celeron G5920</b> </header>
+
+            <img src="img/Intel Celeron G5920.jpg" style="width: 250px;"> 
+
+             <br><div>
+                Se eligió este procesador porque es económico y cumple con normalidad las tareas <br>
+                 que tenemos como objetivo además de ser de última generación llega a tener una  <br>
+                 arquitectura nueva la cual mejora a sus antecesores modelos, lo cual es suficiente  <br>
+                 para poder realizar investigaciones y trabajos en ofimática. <br>
+            </div>
+        </p>
+        <p>
+             <br><header id="xd"><b> Memoria RAM 8GB (cualquiera a partir de 2666mhz)</b> </header>
+
+            <img src="img/Memoria ram DDR4 T FORCE.jpg" width="250px">
+
+             <br><div>
+                Actualmente 4GB de RAM se está quedando ‘corto’ en cuanto los programas actuales. <br>
+                 Se eligió 8GB de memoria RAM porque  Windows (sistema operativo comúnmente usado) <br>
+                  se va actualizando con el tiempo a la vez que los programas que vamos a ir utilizando, <br>
+                   esto significa que tenemos que aumentar nuestros recursos, por lo tanto 8GB de memoria <br>
+                    RAM nos abastece muy bien. <br>
+            </div>
+
+        </p>
+
+        <p>
+             <br><header id="xd"><b> Motherboard Gigabyte H310-MSH</b></header>
+
+            <img src="img/Gigabyte H310-MSH.jpg" width="250px">
+
+             <br><div>
+                Esta placa base es básica del mercado, pero nos sirve porque nos brinda características <br>
+                 que se acoplan a nuestro objetivo, también puede ser mejorable a futuro si nos apuntamos <br>
+                  a otro rubro en cuanto a su uso pero como es básica no podemos mejorar demasiado. <br>
+            </div>
+        </p>
+
+        <p>
+
+             <br><header id="xd"><b>Fuente de energia Lnz 550w</b> </header>
+
+            <img src="img/lnz 550w.jpg" width="250px">
+
+             <br><div>
+                Esta fuente no nos causará ningún problema en cuanto al uso energético ya que sus watts <br>
+                 son 550 y no necesita ser certificada, suficientes para alimentar a un procesador, <br>
+                  además de que la marca goza de buena reputación. <br>
+
+            </div>
+
+        </p>
+        
+        <p>
+             <br><header id="xd"><b> Gabinete Sentey G28</b></header>
+
+            <img src="img/Sentey G28.jfif" width="60%">
+
+             <br><div>
+                Este gabinete tiene el suficiente tamaño para que nuestros componentes tengan una buena <br>
+                 circulación de aire, su diseño minimalista lo hace elegante. <br>
+            </div>
+        </p>
+
+        <p>
+            <div>
+                 <br><header id="xd"><b> Recomendaciones (general):</b></header> <br> <br>
+
+                Las computadoras destinadas al estudio tienen la característica de que al no demandar <br>
+                 tanto hardware, eso hace que tengan un precio accesible para la mayoría de la gente. <br> <br>
+
+                
+
+                 <br><header id="xd"><b> Memoria RAM: </b></header> <br> <br>
+
+                Si necesitamos 8GB de memoria RAM se recomienda utilizar el dual channel, esto significa
+                 2 ranuras de RAM del mismo canal (se diferencian los canales por sus colores) en funcionamiento. <br> <br>
+
+                 <br><header id="xd"><b> Procesador: </b></header> <br> <br>
+
+                Generalmente para estudio no se necesita hardware de alta o mediana tecnología,  <br>
+                 esto es una ventaja económica pero también se presenta una desventaja en cuanto a un <br>
+                  futuro ‘upgrade’. <br> <br>
+
+            </div>
+        </p>
+
+        <button id="Atras" onclick="ocultarPresup1A(); ocultarPresup1B();">Atras</button> <br>
+    </div>
+
+    <script>
+        function mostrarPresup1B() {
+             document.getElementById('Presup1B').style.display = 'block';
+         }
+         function ocultarPresup1B() {
+             document.getElementById('Presup1B').style.display = 'none';
+         } 
+ 
+     </script>
+ 
+     <style>
+         #Presup1B {
+             display: none;
+         }
+ 
+     </style>
+
+    <div id="Presup1B">
+
+        <p>
+             <br><header id="xd"><b> Procesador Intel Pentium Gold G5620</b></header> <br>
+
+            <img src="img/19-117-875-Z01.jpg" width="250px">
+
+             <br><div>
+                Se eligió este procesador porque es económico y cumple con normalidad las tareas <br>
+                 que tenemos como objetivo además de ser de última generación llega a tener una <br>
+                  arquitectura nueva la cual mejora a sus antecesores modelos, lo cual es suficiente <br>
+                   para poder realizar investigaciones y trabajos en ofimática. <br>
+            </div>
+
+        </p>
+
+        <p>
+             <br><header id="xd"><b> Memoria RAM 8GB (cualquiera a partir de 2666mhz)</b></header> <br>
+
+            <img src="img/Memoria ram DDR4 T FORCE.jpg" width="250px">
+
+             <br><div>
+                Actualmente 4GB de RAM se está quedando ‘corto’ en cuanto los programas actuales. <br>
+                 Se eligió 8GB de memoria RAM porque  Windows (sistema operativo comúnmente usado) <br>
+                  se va actualizando con el tiempo a la vez que los programas que vamos a ir utilizando, <br>
+                   esto significa que tenemos que aumentar nuestros recursos, por lo tanto 8GB de memoria <br>
+                   RAM nos abastece muy bien. <br>
+            </div>
+
+        </p>
+
+        <p>
+            <br><header id="xd"><b> Motherboard Gigabyte H310M </b></header> <br>
+
+            <img src="img/Gigabyte H310-MSH.jpg" width="250px">
+
+            <br><div>
+                Esta placa base es básica del mercado, pero nos sirve porque nos brinda características <br>
+                 que se acoplan a nuestro objetivo, también puede ser mejorable a futuro si nos apuntamos <br>
+                  a otro rubro en cuanto a su uso pero como es básica no podemos mejorar demasiado. <br>
+            </div>
+
+        </p>
+
+        <p>
+            <br><header id="xd"><b> Fuente de energia Lnz 550w </b><br></header>
+
+            <img src="img/lnz 550w.jpg" width="250px">
+
+            <br><div>
+                Esta fuente no nos causará ningún problema en cuanto al uso energético ya que sus watts <br>
+                 son 550 y no necesita ser certificada, suficientes para alimentar a un procesador, además <br>
+                  de que la marca goza de buena reputación. <br>
+
+            </div>
+        </p>
+            <p>
+                <br><header id="xd"><b> Gabinete Sentey G28 </b><br></header>
+
+            <img src="img/Sentey G28.jfif" width="450px">
+
+            <br><div>
+                Este gabinete tiene el suficiente tamaño para que nuestros componentes tengan una buena <br>
+                 circulación de aire, su diseño minimalista lo hace elegante. <br>
+            </div>
+            </p>
+
+            <p>
+                <br><header id="xd"><b> Placa de video GT 710 1GB </b></header>
+
+                <img src="img/GT 710.jpg" width="250px">
+
+                <br><div>
+                    Esta placa de video es actualmente de las mas economicas y de facil acceso ya que su <br>
+                     comercializacion no fue afectada con el paso del tiempo. <br>
+                </div>
+            </p>
+        
+            <button id="Atras" onclick="ocultarPresup1B(); ocultarPresup1A();">Atras</button> <br>
+    </div>
+
+
+
+    <script>
+        function mostrarPreg1B() {
+            document.getElementById('Pregunta1B').style.display = 'block';
+        }
+        function ocultarPreg1B() {
+            document.getElementById('Pregunta1B').style.display = 'none';
+        }
+    </script>
+
+    <style>
+        #Pregunta1B {
+            display: none;
+        }
+    </style>
+
+    <div id="Pregunta1B">
+        <p>
+            <br><b> 1. b. Su trabajo es de: </b><br>
+            <br><input type="radio" onclick="mostrarPreg2A(); ocultarPresup2B(); ocultarPresup2C(); ocultarPreg1B();" name="preg1b" value="a">a. Edicion de multimedia <br> <br>
+            <input type="radio" onclick="mostrarPresup2B(); ocultarPresup2AA(); ocultarPresup2AB(); ocultarPresup2C();" name="preg1b" value="b">b. Documentación de archivos o documentos <br> <br>
+            <input type="radio" onclick="mostrarPresup2C(); ocultarPresup2AA(); ocultarPresup2AB(); ocultarPresup2B();" name="preg1b" value="c">c. Realización de planos/gráficos <br> <br>
+            <button id="Atras" onclick="ocultarPreg1B(); ocultarPresup2AA(); ocultarPresup2AB(); ocultarPresup2C(); ocultarPresup2B(); mostrarPregunta1();">VOLVER A PREGUNTA 1</button> <br> <br>
+        </p>
+    </div>
+
+    <script>
+        function mostrarPresup2B() {
+
+            document.getElementById('Presup2B').style.display = 'block';
+    
+        }
+
+        function ocultarPresup2B() {
+
+            document.getElementById('Presup2B').style.display = 'none';
+
+        }
+
+    </script>
+
+    <style>
+        #Presup2B {
+
+            display: none;
+        }    
+    </style>
+
+    <div id="Presup2B">
+
+        <p>
+            <header id="xd"><b>Intel I3 9100</b> </header> <br>
+
+            <img src="img/Intel i3 9100.jpg" width="250px">
+
+            <div>
+
+                Este procesador se vende en el mercado hace algunos años pero lo podemos encontrar como nuevo, es cierto que tiene una arquitectura de hace 2 generaciones, <br>
+                pero no le quita que nos brinda lo justo y necesario para tener archivos abiertos en simultáneo sin complicaciones en cuanto a lentitud de cierre y aperturas <br>
+                de las mismas, además de que no nos molestara en arduas horas de trabajo continuo. <br>
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Memoria RAM 8GB</b></header>
+
+            <img src="img/Memoria ram ddr4 crucial.jpg" width="250px">
+
+            <div>
+
+                Actualmente 4GB de RAM se está quedando ‘corto’ en cuanto los programas actuales. Se eligió 8GB de memoria RAM porque  Windows (sistema operativo comúnmente usado) se <br>
+                 va actualizando con el tiempo a la vez que los programas que vamos a ir utilizando, esto significa que tenemos que aumentar nuestros recursos, por lo tanto 8GB de <br>
+                  memoria RAM nos abastece muy bien.
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Motherboard Asus Prime H310 m-e R2.0</b></header>
+
+            <img src="img/Motherboard Asus Prime H310 m-e R2.0.jpg" width="250px">
+
+            <div>
+                Esta placa base es básica del mercado, pero nos sirve porque nos brinda características que se acoplan a nuestro objetivo, también puede ser mejorable a futuro si nos <br>
+                 apuntamos a otro rubro en cuanto a su uso pero como es básica no podemos mejorar demasiado. <br>
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Fuente de energía LNZ PX550-FS 550w</b></header>
+
+            <img src="img/lnz 550w.jpg" width="250px">
+
+            <div>
+
+                Esta fuente no nos causará ningún problema en cuanto al uso energético ya que sus watts son 550 y no necesita ser certificada, suficientes para alimentar a un <br>
+                procesador, además
+                 de que la marca goza de buena reputación. <br>
+
+
+            </div>
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Gabinete</b></header>
+
+            <div>
+
+                Cualquier gabinete sirve para esta función, la estética queda a disposición de ustedes.
+
+            </div>
+        </p>
+
+        <p>
+            <header id="xd"><b>Almacenamiento</b></header>
+
+            <img src="img/1tb hdd.jpg" width="250px">
+
+            <div>
+
+                Solamente se puede decir que 1TB es la base en cuanto a almacenamiento en una PC  <br>
+                moderna, cualquiera actualmente tiene 1TB, además de que por precio si se busca menor memoria de  <br>
+                almacenamiento tienen un valor similar a 1TB. Marcas conocidas <b>Western Digital</b> y <b>Barracuda</b><br>
+
+            </div>
+
+
+        </p>
+
+
+        <button id="Atras" onclick="ocultarPreg2B();">Atras</button> <br> <br>
+    </div>
+
+    <script>
+
+        function mostrarPresup2C() {
+            document.getElementById('Presup2C').style.display = 'block';
+        }
+        function ocultarPresup2C() {
+            document.getElementById('Presup2C').style.display = 'none';
+        }
+
+    </script>
+
+    <style>
+
+        #Presup2C {
+
+            display: none;
+
+        }
+
+    </style>
+
+    <div id="Presup2C">
+
+        <p>
+            <header id="xd"><b>Procesador Intel i3 9100</b></header>
+
+            <img src="img/Intel i3 9100.jpg" width="250px">
+
+            <div>
+
+                Este procesador se vende en el mercado hace algunos años pero lo podemos encontrar como nuevo, es cierto que tiene una arquitectura de hace 2 <br>
+                 generaciones, pero no le quita que nos brinda lo justo y necesario para tener archivos abiertos en simultáneo sin complicaciones en cuanto a  <br>
+                 lentitud de cierre y aperturas de las mismas, además de que no nos molestara en arduas horas de trabajo continuo. <br>
+
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Memoria RAM 8GB</b></header>
+
+            <img src="img/Memoria ram ddr4 crucial.jpg" width="250px">
+
+            <div>
+
+                Actualmente 4GB de RAM se está quedando ‘corto’ en cuanto los programas actuales. Se eligió 8GB de memoria RAM porque  Windows (sistema operativo <br>
+                 comúnmente usado) se va actualizando con el tiempo a la vez que los programas que vamos a ir utilizando, esto significa que tenemos que aumentar <br>
+                  nuestros recursos, por lo tanto 8GB de memoria RAM nos abastece muy bien. <br>
+
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Motherboard Asus Prime H310 m-e R2.0</b></header>
+
+            <img src="img/Motherboard Asus Prime H310 m-e R2.0.jpg" width="250px">
+
+            <div>
+
+                Esta placa base es básica del mercado, pero nos sirve porque nos brinda características que se acoplan a nuestro objetivo, también puede ser mejorable <br>
+                 a futuro si nos apuntamos a otro rubro en cuanto a su uso pero como es básica no podemos mejorar demasiado. <br>
+
+            </div>
+
+
+        </p>
+         
+        <p>
+            <header id="xd"><b>Fuente de energia LNZ 650w</b></header>
+
+            <img src="img/lnz 650w.jpg" width="250px">
+
+            <div>
+
+                En este armado tenemos una placa de video simple, por la cual no necesitamos una fuente certificada para alimentar los componentes, directamente la alimentación <br>
+                 de nuestra placa de video es a través de la motherboard. <br>
+
+
+            </div>
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Placa de video GT 1030 2GB</b></header>
+
+            <img src="img/Placa de video GT 1030 2GB.jfif" width="250px">
+
+            <div>
+
+                Esta placa de video viene de la gama base en cuanto a placa de video nos referimos, no nos consume una gran energía considerable y tiene un precio accesible. <br>
+
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Gabinete</b></header> 
+
+            <div>
+
+                Cualquier gabinete nos sirve en ese ámbito, pero cuidado de comprar una versión Slim (pequeño) ya que nos limita en cuanto a espacio y ventilación de aire dentro del <br>
+                gabinete.
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Almacenamiento</b></header>
+            
+            <img src="img/1tb hdd.jpg" width="250px">
+
+            <div>
+
+                Solamente se puede decir que 1TB es la base en cuanto a almacenamiento en una PC moderna, cualquiera actualmente tiene 1TB, además de que por precio si se busca menor memoria <br>
+                 de almacenamiento tienen un valor similar. <br>
+
+
+            </div>
+
+
+        </p>
+
+    </div>
+
+
+    <script>
+        function mostrarPreg2A() {
+            document.getElementById('Pregunta2A').style.display = 'block';
+        }
+        function ocultarPreg2A() {
+            document.getElementById('Pregunta2A').style.display = 'none';
+        }
+
+    </script>
+
+    <style>
+        #Pregunta2A {
+            display: none;
+        }
+    </style>
+
+    <div id="Pregunta2A">
+        <b> 2. a. Usted quiere editar como: </b><br> <br>
+        <br><input type="radio" onclick="mostrarPresup2AA(); ocultarPresup2AB();" name="preg2a" value="a">a. Editor con conocimientos básicos (introducción de animaciones, efectos, transiciones, etc) <br> <br>
+        <input type="radio" onclick="mostrarPresup2AB(); ocultarPresup2AA();" name="preg2a" value="b">b. Editor con conocimientos avanzados (animación 3D, renderizado en 4K, etc) <br> <br>
+        <button id="Atras" onclick="mostrarPregunta1(); ocultarPreg2A(); ocultarPresup2AA(); ocultarPresup2AB();">VOLVER A PREGUNTA ANTERIOR</button> <br>
+
+    </div>
+
+    <script>
+        function mostrarPresup2AA() {
+            document.getElementById('Presup2AA').style.display = 'block';
+        }
+        function ocultarPresup2AA() {
+            document.getElementById('Presup2AA').style.display = 'none';
+        }
+
+    </script>
+    
+    <style>
+
+        #Presup2AA {
+
+            display: none;
+
+        }
+
+    </style>
+
+    <div id="Presup2AA">
+
+        <p>
+            <header id="xd"><b>Procesador Ryzen 5 3600x</b></header>
+
+            <img src="img/ryzen 5 3600x.jpg" width="250px">
+
+            <div>
+
+                Este procesador cuenta con 6 núcleos y 12 hilos a una frecuencia de 3,6hz (overclockable a 4,2), este modelo es actual al año <br>
+                2021, por lo tanto su arquitectura es de última generación. Estamos contando con una velocidad de procesamiento en la gama media <br>
+                 por lo cual podemos realizar más allá de solo tareas básicas, es verdad que su precio aumenta pero es debido a que alcanzamos más <br>
+                  prestaciones en el hardware. <br>
+
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Memoria RAM 16GB</b></header>
+
+            <img src="img/memoria ram ddr4 vengeance pro.jpg" width="250px">
+
+            <div>
+
+                16GB de RAM son muy buenos en estos casos ya que necesitaremos guardar y mover muchos recursos gráficos (imágenes, videos) a la vez <br>
+                 para la edición audiovisual. Una recomendación, traten de comprar RAM con velocidad alta (3200mhz, 3400mhz) <br>
+
+            </div>
+
+
+        </p>
+        
+        <p>
+            <header id="xd"><b>Motherboard B450M PRO-VDH MAX </b></header>
+
+            <img src="img/Motherboard msi b450m pro.jpg" width="250px">
+            
+            <div>
+
+                Esta motherboard presenta en su placa una mejora considerable en audio comparado a sus otros ensambladores, esto nos ayudará para la <br>
+                 edición de nuestro contenido y además goza de buen precio para su calidad (el famoso término precio/calidad). <br>
+
+
+            </div>
+
+
+        </p>
+
+        <p> 
+            <header id="xd"><b>Fuente de energía Aerocool 500w Bronze Cylon RGB</b></header>
+
+            <img src="img/cyclon 500w aerocool.jpg" width="250px">
+
+            <div>
+
+                Necesitaremos de una fuente certificada para alimentar nuestra placa de video, esto nos asegura de que nuestros componentes no se <br>
+                quemen y estén seguros. <br>
+
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Gabinete Sentey Z20 </b></header>
+
+            <img src="img/sentey z20 gabinete.jpg" width="250px">
+
+            <div>
+
+                Se utilizara este gabinete porque nos presenta más filtros de aire para su correcta circulación, además de permitirnos agregar una <br>
+                 refrigeración líquida de 120mm <br>
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Placa de Video RX 570 4GB Phantom Gaming</b></header>
+
+            <img src="img/rx 570 4gb phantom gaming.jpg" width="250px">
+
+            <div>
+
+                Este modelo de la ensambladora Phantom es la mas economica del mercado en cuanto a RX 570 se refiere. Nos ayudara a procesar nuestras tareas <br>
+                de manera satisfactoria, no se acerca a una gama media-alta pero cumple segun su precio. <br>
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Almacenamiento 1TB HDD</b></header>
+
+            <img src="img/1tb hdd.jpg" width="250px">
+
+            <div>
+                Solamente se puede decir que 1TB es la base en cuanto a almacenamiento en una PC moderna, cualquiera actualmente tiene 1TB, además de que por precio si se busca menor memoria <br>
+                 de almacenamiento tienen un valor similar. <br>
+            </div>
+        </p>
+
+        <p>
+            <header id="xd"><b>Almacenamiento 240GB SSD</b></header>
+
+            <img src="img/ssd 240gb.jpg" width="250px">
+
+            <div>
+
+                No se habló mucho de este segmento ya que nos era indiferente hasta este punto. Un disco SSD es 10 veces más rápido que los discos HDD (discos duros) comunes, podremos <br>
+                guardar algun que otro material audiovisual temporal para trabajar de forma mas eficaz en cuanto a tiempos se refiere y nuestra pc iniciara sistema en menos de un minuto. <br>
+        
+            </div>
+        </p>
+
+    </div>
+
+    <script>
+
+        function mostrarPresup2AB() {
+            document.getElementById('Presup2AB').style.display = 'block';
+        }
+        function ocultarPresup2AB() {
+            document.getElementById('Presup2AB').style.display = 'none';
+        }
+
+    </script>
+
+    <style>
+
+        #Presup2AB {
+
+            display: none;
+
+        }
+
+    </style>
+
+    <div id="Presup2AB">
+
+        <p>
+            <header id="xd"><b>Procesador Ryzen 7 3700X / Ryzen 3900X</b></header>
+
+            <img src="img/Ryzen 7 3700X.jpg" width="250px">
+            
+            <div>
+
+                Este procesador nos ayudará con la carga gráfica que necesitamos procesar en cuanto a la resolución 4k, 8 núcleos y 16 hilos corriendo con la última arquitectura de 7nm  <br>
+                ofrece buen rendimiento. <br>
+
+            </div>
+
+            <img src="img/Ryzen 9.jpg" width="250px">
+
+            <div>
+
+                Si tenemos un presupuesto más alto nos podemos dar el lujo de este Ryzen 9 para agilizar nuestras tareas gráficas. <br>
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Memoria RAM 64GB (2x32) 4000mhz GSkill Trindetz</b></header>
+
+            <img src="img/memoria ram ddr4 gskil trindetz rgb 4000mhz.jpg" width="250px">
+
+            <div>
+
+                64GB para la cantidad de datos que vamos a mover en 4k nos abastecerá de una manera factible y eficiente. <br>
+
+            </div>
+        </p>
+
+        <p>
+            <header id="xd"><b>Motherboard Z370 TUF</b></header>
+
+            <img src="img/Motherboard z370 plus.jpg.opdownload" width="250px">
+
+            <div>
+
+                Puede salir algo costosa para ser una motherboard, pero lo vale por mejorar su placa de sonido, además de poder utilizar memorias RAM de 4000mhz.
+
+            </div>
+        </p>
+
+        <p>
+            <header id="xd"><b>Fuente de energía Redragon Gc-ps011 Full Modular 80 Plus Bronce</b></header>
+
+            <img src="img/redragon 850w.jpg" width="250px">
+
+            <div>
+
+                Utilizaremos 800w, pero esta fuente esta certificada con 800w reales por lo que no nos dará problema para utilizar nuestro procesador y placa de <br>
+                 video potentes en este caso. Recomendación: si tenemos un presupuesto superior podemos optar por utilizar un ventilador individual para el procesador, por <br>
+                  ejemplo Cooling Id-cooling Frostflow 240x <br>
+
+            </div>
+        </p>
+
+        <p>
+            <header id="xd"><b>Gabinete Sentey Z20 </b></header>
+
+            <img src="img/sentey z20 gabinete.jpg" width="250px">
+
+            <div>
+
+                Se utilizara este gabinete porque nos presenta más filtros de aire para su correcta circulación, además de permitirnos agregar una <br>
+                 refrigeración líquida de 120mm <br>
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Placa de video RX 5700 XT Gigabyte 8GB</b></header>
+
+            <img src="img/Placa de video RX 5700 XT gigabyte.jpg" width="250px">
+
+            <div>
+
+                Nada que decir de esta placa de video, suficiente para nuestro trabajo y además muy aprovechable para jugar algunos videojuegos AAA <br>
+                (cada A representa la carga gráfica que va a tener el juego). Cabe destacar que esta la ensambladora Gigabyte es de buena calidad y
+                reconocimiento internacional.
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Almacenamiento 2TB HDD</b></header>
+
+            <img src="img/2tb hdd.jpg" width="250px">
+
+            <img src="img/1tb ssd.jpg" width="250px">
+
+            <div>
+                No se habló mucho de este segmento ya que nos era indiferente  hasta este punto. Un disco SSD es 10 veces más rápido que los discos HDD <br>
+                 (discos duros) comunes, cada segmento nos ayuda a agilizar nuestro trabajo. El disco HDD que también utilizaremos nos ayudará a guardar <br>
+                  trabajos pesados que no utilizaremos en el momento y queremos para alguna que otra observación. <br>
+            </div>
+        </p>
+
+        <p>
+            <header id="xd"><b>Almacenamiento 240GB SSD</b></header>
+
+            <img src="img/ssd 240gb.jpg" width="250px">
+
+            <div>
+
+                No se habló mucho de este segmento ya que nos era indiferente hasta este punto. Un disco SSD es 10 veces más rápido que los discos HDD (discos duros) comunes, podremos <br>
+                guardar algun que otro material audiovisual temporal para trabajar de forma mas eficaz en cuanto a tiempos se refiere y nuestra pc iniciara sistema en menos de un minuto. <br>
+        
+            </div>
+        </p>
+
+
+
+    </div>
+
+
+
+    <script>
+        function mostrarPreg1C() {
+            document.getElementById('Pregunta1C').style.display = 'block';
+        }
+        function ocultarPreg1C() {
+            document.getElementById('Pregunta1C').style.display = 'none';
+        }
+
+    </script>
+
+    <style>
+        #Pregunta1C {
+            display: none;
+        }
+    </style>
+
+    <div id="Pregunta1C">
+        <br><b> 3. c.  El entretenimiento que consume es: </b><br> <br>
+        <br><input type="radio" onclick="mostrarPresup3A(); ocultarPresup3BA(); ocultarPresup3BB(); ocultarPresup3BC();" name="preg1c" value="a">a. Redes sociales y cinematografía (películas, series) <br> <br>
+        <input type="radio" onclick="mostrarPreg3B(); ocultarPresup3BA(); ocultarPresup3BB(); ocultarPresup3BC(); ocultarPresup3A();" name="preg1c" value="b">b. Videojuegos <br> <br>
+        <button id="Atras" onclick="ocultarPreg1C(); ocultarPresup3BA(); ocultarPresup3BB(); ocultarPresup3BC(); ocultarPresup3A(); mostrarPregunta1(); ocultarPreg3B();">VOLVER A PREGUNTA 1</button> <br>
+
+    </div>
+
+    <script>
+
+        function mostrarPresup3A() {
+            document.getElementById('Presup3A').style.display = 'block';
+        }
+        function ocultarPresup3A() {
+            document.getElementById('Presup3A').style.display = 'none';
+        }
+
+    </script>
+
+    <style>
+
+        #Presup3A {
+
+            display: none;
+
+        }
+
+    </style>
+
+    <div id="Presup3A">
+
+        <p>
+            <header id="xd"><b>Intel I3 9100</b> </header> <br>
+
+            <img src="img/Intel i3 9100.jpg" width="250px">
+
+            <div>
+
+                Este procesador se vende en el mercado hace algunos años pero lo podemos encontrar como nuevo, es cierto que tiene una arquitectura de hace 2 generaciones, <br>
+                pero no le quita que nos brinda lo justo y necesario para tener archivos abiertos en simultáneo sin complicaciones en cuanto a lentitud de cierre y aperturas <br>
+                de las mismas, además de que no nos molestara en arduas horas de trabajo continuo. <br>
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Memoria RAM 8GB</b></header>
+
+            <img src="img/Memoria ram ddr4 crucial.jpg" width="250px">
+
+            <div>
+
+                Actualmente 4GB de RAM se está quedando ‘corto’ en cuanto los programas actuales. Se eligió 8GB de memoria RAM porque  Windows (sistema operativo comúnmente usado) se <br>
+                 va actualizando con el tiempo a la vez que los programas que vamos a ir utilizando, esto significa que tenemos que aumentar nuestros recursos, por lo tanto 8GB de <br>
+                  memoria RAM nos abastece muy bien.
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Motherboard Asus Prime H310 m-e R2.0</b></header>
+
+            <img src="img/Motherboard Asus Prime H310 m-e R2.0.jpg" width="250px">
+
+            <div>
+                Esta placa base es básica del mercado, pero nos sirve porque nos brinda características que se acoplan a nuestro objetivo, también puede ser mejorable a futuro si nos <br>
+                 apuntamos a otro rubro en cuanto a su uso pero como es básica no podemos mejorar demasiado. <br>
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Fuente de energía LNZ PX550-FS 550w</b></header>
+
+            <img src="img/lnz 550w.jpg" width="250px">
+
+            <div>
+
+                Esta fuente no nos causará ningún problema en cuanto al uso energético ya que sus watts son 550 y no necesita ser certificada, suficientes para alimentar a un <br>
+                procesador, además
+                 de que la marca goza de buena reputación. <br>
+
+
+            </div>
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Gabinete</b></header>
+
+            <div>
+
+                Cualquier gabinete sirve para esta función, la estética queda a disposición de ustedes.
+
+            </div>
+        </p>
+
+        <p>
+            <header id="xd"><b>Almacenamiento</b></header>
+
+            <img src="img/1tb hdd.jpg" width="250px">
+
+            <div>
+
+                Solamente se puede decir que 1TB es la base en cuanto a almacenamiento en una PC  <br>
+                moderna, cualquiera actualmente tiene 1TB, además de que por precio si se busca menor memoria de  <br>
+                almacenamiento tienen un valor similar a 1TB. Marcas conocidas <b>Western Digital</b> y <b>Barracuda</b><br>
+
+            </div>
+
+
+        </p>
+
+
+        <button id="Atras" onclick="ocultarPresup3A(); ocultarPresup3BA(); ocultarPresup3BB(); ocultarPresup3BC(); ocultarPreg3B();">Atras</button> <br> <br>
+    </div>
+
+
+    </div>
+
+
+    <script>
+        function mostrarPreg3B() {
+            document.getElementById('Pregunta3B').style.display = 'block';
+        }
+        function ocultarPreg3B() {
+            document.getElementById('Pregunta3B').style.display = 'none';
+        }
+
+    </script>
+
+    <style>
+        #Pregunta3B {
+            display: none;
+        }
+
+    </style>
+
+    <div id="Pregunta3B">
+        <br><b> 3. b. La gama en cuanto a videojuegos es de: </b> <br>
+        <br><input type="radio" onclick="mostrarPresup3BA(); ocultarPresup3BB(); ocultarPresup3BC();" name="preg3b" value="a">a. Alta <br> <br>
+        <input type="radio" onclick="mostrarPresup3BB(); ocultarPresup3BA(); ocultarPresup3BC();" name="preg3b" value="b">b. Media <br> <br>
+        <input type="radio" onclick="mostrarPresup3BC(); ocultarPresup3BA(); ocultarPresup3BB();" name="preg3b" value="c">c. Baja <br> <br>
+        
+    </div>
+
+    <script>
+
+        function mostrarPresup3BA() {
+            document.getElementById('Presup3BA').style.display = 'block';
+        }
+        function ocultarPresup3BA() {
+            document.getElementById('Presup3BA').style.display = 'none';
+        }
+
+    </script>
+
+    <style>
+
+        #Presup3BA {
+
+            display: none;
+
+        }
+
+    </style>
+
+    <div id="Presup3BA">
+
+        <p>
+            <header id="xd"><b>Ryzen 9 3900X</b></header>
+
+            <img src="img/Ryzen 9.jpg" width="250px">
+
+            <div>
+
+                
+                Este procesador es de última generación, es capaz de soportar componentes de potentes procesamientos gráficos. Su alto precio vale <br>
+                 para obtener mejoras muy altas comparada a sus hermanos menores <br>
+
+
+            </div>
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Memoria RAM 32GB 4000mhz</b></header>
+
+            <img src="img/memoria ram ddr4 vengeance pro.jpg" width="250px">
+
+            <div>
+
+                32GB no nos generará ningún problema, se puede decir que son muchos GB, pero es lo que demanda en cuanto a recursos los nuevos videojuegos AAA. <br>
+
+            </div>
+        </p>
+
+        <p>
+            <header id="xd"><b>Motherboard x570 Asus Prime</b></header>
+
+            <img src="img/Motherboard asus prime x570.jpg" width="250px">
+
+            <div>
+
+                En cuanto a compatibilidad con nuevas tecnologías (como DDR5, PCI.EXPRESS 4.0) y drivers de buena calidad para sonido y conectividad, nos ofrece  <br>
+                prestaciones que algunas veces no usaremos en su totalidad ya que no la usaremos para un trabajo profesional, pero si se usaran para conectar nuevos  <br>
+                componentes que salen al mercado. <br>
+
+            </div>
+        </p>
+
+        <p>
+            <header id="xd"><b>Fuente de energiA 1000w Gold Gigabyte </b></header>
+            
+            <img src="img/gigabyte 1000w gold.jpg" width="250px">
+
+            <div>
+
+                Necesitamos una fuente de energía que nos proporcione muchos watts, porque al mejorar los componentes, su rendimiento es mayor y eso produce más <br>
+                consumo energético. La placa de video, procesador y refrigeración serán los principales consumidores energéticos <br>
+
+
+            </div>
+        </p>
+
+
+        <p>
+            <header id="xd"><b>Placa de video RTX 3080 12GB Gigabyte  </b></header>
+
+            <img src="img/gigabyte placa de video 3080 12gb.jpg" width="250px">
+
+            <div>
+
+                Esta placa de video tiene algo de tiempo en el mercado, pero no le saca que esté dentro del top 10 en cuanto a potencia del mercado. <br>
+                
+            </div>
+        </p>
+
+        <p>
+            <header id="xd"><b>Gabinete Corsair Lcue 220t RGB Airflow</b></header>
+
+            <img src="img/Gabinete airflow corsair white.jpg" width="250px">
+            
+            <div>
+
+                Este gabinete nos permite meter una refrigeración líquida de 2 coolers de 120mm, además de poseer un tamaño considerable para <br>
+                 el flujo de aire. <br>
+
+            </div>
+        </p>
+
+        <p>
+            <header id="xd"><b>Almacenamiento 2TB HDD y 1TB SSD</b></header>
+
+            <img src="img/2tb hdd.jpg" width="250px">
+
+            <img src="img/1tb ssd.jpg" width="250px">
+
+            <div>
+
+                2TB de disco duro (HDD) nos servirá para guardar juegos muy pesados (los juegos actuales AAA llegan a pesar entre 100GB a 300GB) <br>
+                 y 1TB de disco sólido (SSD) nos ayudará a tener instalado el sistema operativo y algún que otro juego favorito para aprovechar <br>
+                  las velocidades del disco y acortar las cargas de mapas, mundos, etc. <br>
+
+
+            </div>
+        </p>
+
+        <p>
+                <header id="xd"><b>Refrigeración Nox Hummer H-360 Argb Water cooling</b></header>
+
+                <img src="img/noctua refrigeracion liquida.jpg" width="250px">
+
+                <div>
+
+                Elegimos depender de una refrigeración líquida ya que comparada a las de aire la mayoría presenta menos temperatura y por lo tanto nos <br>
+                 ayuda a mantener los grados en nuestro procesador (el cerebro en nuestra pc). <br>
+
+                </div>
+        </p>
+
+
+    </div>
+
+    <script>
+
+        function mostrarPresup3BB() {
+            document.getElementById('Presup3BB').style.display = 'block';
+        }
+        function ocultarPresup3BB() {
+            document.getElementById('Presup3BB').style.display = 'none';
+        }
+
+    </script>
+    
+    <style>
+
+        #Presup3BB {
+
+            display: none;
+
+        }
+
+    </style>
+
+    <div id="Presup3BB">
+
+        <p>
+            <header id="xd"><b>Procesador Ryzen 5 3600x</b></header>
+
+            <img src="img/ryzen 5 3600x.jpg" width="250px">
+
+            <div>
+
+                Este procesador cuenta con 6 núcleos y 12 hilos a una frecuencia de 3,6hz (overclockable a 4,2), este modelo es actual al año <br>
+                2021, por lo tanto su arquitectura es de última generación. Estamos contando con una velocidad de procesamiento en la gama media <br>
+                 por lo cual podemos realizar más allá de solo tareas básicas, es verdad que su precio aumenta pero es debido a que alcanzamos más <br>
+                  prestaciones en el hardware. <br>
+
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Memoria RAM 16GB</b></header>
+
+            <img src="img/memoria ram ddr4 vengeance pro.jpg" width="250px">
+
+            <div>
+
+                16GB de RAM son muy buenos en estos casos ya que necesitaremos guardar y mover muchos recursos gráficos (imágenes, videos) a la vez <br>
+                 para la edición audiovisual. Una recomendación, traten de comprar RAM con velocidad alta (3200mhz, 3400mhz) <br>
+
+            </div>
+
+
+        </p>
+        
+        <p>
+            <header id="xd"><b>Motherboard B450M PRO-VDH MAX </b></header>
+
+            <img src="img/Motherboard msi b450m pro.jpg" width="250px">
+            
+            <div>
+
+                Esta motherboard presenta en su placa una mejora considerable en audio comparado a sus otros ensambladores, esto nos ayudará para la <br>
+                 edición de nuestro contenido y además goza de buen precio para su calidad (el famoso término precio/calidad). <br>
+
+
+            </div>
+
+
+        </p>
+
+        <p> 
+            <header id="xd"><b>Fuente de energía Aerocool 500w Bronze Cylon RGB</b></header>
+
+            <img src="img/cyclon 500w aerocool.jpg" width="250px">
+
+            <div>
+
+                Necesitaremos de una fuente certificada para alimentar nuestra placa de video, esto nos asegura de que nuestros componentes no se <br>
+                quemen y estén seguros. <br>
+
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Gabinete Sentey Z20 </b></header>
+
+            <img src="img/sentey z20 gabinete.jpg" width="250px">
+
+            <div>
+
+                Se utilizara este gabinete porque nos presenta más filtros de aire para su correcta circulación, además de permitirnos agregar una <br>
+                 refrigeración líquida de 120mm <br>
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Placa de video RTX 2060 6GB Gigabyte</b></header>
+
+            <img src="img/rtx 2060.jpg" width="250px">
+            
+            <div>
+
+                Esta placa de video nos trae una de las nuevas tecnologias de Nvidia, el RAYTRACING. De su linea 2000 es la hermana menor, pero <br>
+                eso no la baja de su puesto en cuanto a potencia. Nos brindara excelentes cuadros por segundo (FPS) y una calidad alta-maxima <br>
+                en juegos triple A (Shadow of the Tomb Raider, Forza Horizon 7, etc) <br>
+
+            </div>
+        </p>
+
+        <p>
+            <header id="xd"><b>Cooler Master MasterLiquid ML240P </b></header>
+
+            <img src="img/cooler master masterliquid ML240P.jpg.opdownload" width="250px">
+
+            <div>
+
+                El gabinete tiene espacio para instalar un sistema de refrigeracion liquida de 120mm para ventilar nuestro procesador y mantener <br>
+                temperaturas estables ya que nuestro procesador sera bastante consumido por los videojuegos triple A. <br>
+                
+            </div>
+
+
+        </p>
+
+    </div>
+
+    <script>
+
+        function mostrarPresup3BC() {
+            document.getElementById('Presup3BC').style.display = 'block';
+        }
+        function ocultarPresup3BC() {
+            document.getElementById('Presup3BC').style.display = 'none';
+        }
+
+    </script>
+
+    <style>
+
+        #Presup3BC {
+
+            display: none;
+        }
+
+    </style>
+
+    <div id="Presup3BC">
+
+        <p>
+            <header id="xd"><b>Procesador Ryzen 3 3300x</b></header>
+
+            <img src="img/ryzen 3300x.jpg" width="250px">
+
+            <div>
+
+                Este procesador posee mas velocidad en cuanto al proceso de datos por sus nucleos e hilos (4,5GHZ), pero sigue teniendo solamente <br>
+                4 nucleos y 4 hilos. Esto no lo hace desmerecedor de su compra, tranquilamente puede procesar juegos en graficos medio-bajo pero <br>
+                con muchos cuadros por segundo (FPS) que hace la jugabilidad mas rapida y agil.
+
+            </div>
+        </p>
+
+        <p>
+            <header id="xd"><b>Memoria RAM 16GB</b></header>
+            
+            <img src="img/Memoria ram DDR4 T FORCE.jpg" width="250px">
+
+            <div>
+
+                16GB de ram en los videojuegos son los requisitos basicos a dia de hoy, las actualizaciones obligan al consumo mayor de nuestro hardware.
+                <b>Como recomendacion traten de utilizar el dual channel ya que esto beneficia a nuestros Ryzen.</b><br>
+
+            </div>
+        </p>
+
+
+        <p>
+            <header id="xd"><b>Motherboard B450M PRO-VDH MAX </b></header>
+
+            <img src="img/Motherboard msi b450m pro.jpg" width="250px">
+            
+            <div>
+
+                Esta motherboard presenta en su placa una mejora considerable en audio comparado a sus otros ensambladores, esto nos ayudará para la <br>
+                 edición de nuestro contenido y además goza de buen precio para su calidad (el famoso término precio/calidad). <br>
+
+
+            </div>
+
+
+        </p>
+
+        <p> 
+            <header id="xd"><b>Fuente de energía Aerocool 500w Bronze Cylon RGB</b></header>
+
+            <img src="img/cyclon 500w aerocool.jpg" width="250px">
+
+            <div>
+
+                Necesitaremos de una fuente certificada para alimentar nuestra placa de video, esto nos asegura de que nuestros componentes no se <br>
+                quemen y estén seguros. <br>
+
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Gabinete Sentey Z20 </b></header>
+
+            <img src="img/sentey z20 gabinete.jpg" width="250px">
+
+            <div>
+
+                Se utilizara este gabinete porque nos presenta más filtros de aire para su correcta circulación, además de permitirnos agregar una <br>
+                 refrigeración líquida de 120mm <br>
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Placa de Video RX 570 4GB Phantom Gaming</b></header>
+
+            <img src="img/rx 570 4gb phantom gaming.jpg" width="250px">
+
+            <div>
+
+                Este modelo de la ensambladora Phantom es la mas economica del mercado en cuanto a RX 570 se refiere. Nos ayudara a procesar nuestras tareas <br>
+                de manera satisfactoria, no se acerca a una gama media-alta pero cumple segun su precio. <br>
+
+            </div>
+
+
+        </p>
+
+        <p>
+            <header id="xd"><b>Almacenamiento 1TB HDD</b></header>
+
+            <img src="img/1tb hdd.jpg" width="250px">
+
+            <div>
+                Solamente se puede decir que 1TB es la base en cuanto a almacenamiento en una PC moderna, cualquiera actualmente tiene 1TB, además de que por precio si se busca menor memoria <br>
+                 de almacenamiento tienen un valor similar. <br>
+            </div>
+        </p>
+
+        <p>
+            <header id="xd"><b>Almacenamiento 240GB SSD</b></header>
+
+            <img src="img/ssd 240gb.jpg" width="250px">
+
+            <div>
+
+                No se habló mucho de este segmento ya que nos era indiferente hasta este punto. Un disco SSD es 10 veces más rápido que los discos HDD (discos duros) comunes, podremos <br>
+                guardar algun que otro material audiovisual temporal para trabajar de forma mas eficaz en cuanto a tiempos se refiere y nuestra pc iniciara sistema en menos de un minuto. <br>
+        
+            </div>
+        </p>
+
+
+
+
+
+
+
+    </div>
+
+</body>
+</html>
