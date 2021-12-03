@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>PCCS - Armado</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header1>
+            <nav class="navOrigen">
+                <img src="img\iso.png" alt="loading" class="iso">
+                <!--<input type="text" name="txtBusqueda" placeholder="BUSCAR" class="txtInput">-->
+
+                <a href="../../proyecto/index.html">INICIO</a>
+
+                <a href="../Guia/Index.html">Guia de armado</a>
+
+            </nav>
+        </header1>
+
+        <section>
+            <div class="contPadre">
+                <div class="espacioIzq">
+                    <div class="disco" href="#" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                    </div>
+                    <div class="tooltip">Disco Duro (HDD)
+                        <span class="tooltiptext">Es una unidad de hardware que se usa para almacenar contenido y datos digitales
+							en las computadoras. text</span>
+                    </div>
+
+                </div>
+
+                <div id="cont">
+                    <div id="superiorPadre">
+                        <div class="supIzquierda">
+                            <!--insertar imagen-->
+                            <div class="supIzqSup">
+
+                            </div>
+                            <div class="supIzqInf">
+                                <div class="pci1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                                </div>
+
+                                <div class="pci2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <!--insertar imagen-->
+                                </div>
+
+                                <div class="pci3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <!--insertar imagen-->
+                                </div>
+
+                                <div class="pci4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <!--insertar imagen-->
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="supMedio" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <!--vacio-->
+                        </div>
+
+                        <div class="supDerecho">
+                            <div class="supDerechoProcesador" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+
+                            </div>
+                            <div class="tooltip">Procesador
+                                <span class="tooltiptext">Un microprocesador es un componente que realiza las instrucciones y tareas involucradas en el procesamiento informático y es el “motor” que se pone en marcha cuando enciendes el equipo. En un sistema informático, el
+									microprocesador es la unidad central que ejecuta y gestiona las instrucciones lógicas que se le transmiten.</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="inferiorPadre">
+                        <div class="infIzquierda" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <div class="InfIzqSup">
+                                <div class="sata1">
+
+                                </div>
+                                <div class="southbridge">
+                                    <!--insertar imagen-->
+                                </div>
+                            </div>
+
+                            <!--                                             comienza el div de abajo                   -->
+                            <div class="infIzqInf">
+                                <div class="satas">
+                                    <!--insertar imagen-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="infDerecha">
+                            <div class="infDerecha1">
+                                <div class="ram1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <!--insertar imagen-->
+                                </div>
+                            </div>
+                            <div class="ram2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                            <div class="tooltip">RAM
+                                <span class="tooltiptext">La memoria RAM es la memoria principal de un dispositivo, esa donde se almacenan
+									de forma temporal los datos de los programas que estás utilizando en este
+									momento. ... Cuanta más RAM tengas más aplicaciones podrás gestionar a la vez, y
+									de ahí su importancia porque si no hay suficiente el ordenador puede ir lento</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="espacioDer">
+                    <div class="caja" href="#" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <a href="#modal" class="btn-Procesador">Procesador                                     <img src="img/procesadori.png" draggable="true" ondragstart="drag(event)" id="dragcpu" width="137" height="147">
+						</a>
+
+                    </div>
+
+                    <div class="caja" href="#" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                        <a href="#modal2" class="btn-Sata">RAM <img src="img/ramhy.png" draggable="true" ondragstart="drag(event)" id="dragram1" width="408" height="30"><img src="img/ramhy.png" draggable="true" ondragstart="drag(event)" id="dragram2" width="408" height="30"></a>
+
+                    </div>
+
+
+                    <div class="caja" href="#" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <a href="#modal3" class="btn-Disco">Disco   <img src="img/hdd.png" draggable="true" ondragstart="drag(event)" id="dragHDD"></a>
+
+                    </div>
+
+                    <div class="caja" href="#" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+
+                        <a href="#modal4" class="btn-Fuente">Fuente <br> de <br> Alimentacion <img src="img/Fuente.png" draggable="true" ondragstart="drag(event)" id="dragFuente"></a>
+
+                    </div>
+
+
+
+                    <div class="caja" href="#" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                        <a href="#modal5" class="btn-Pldevd">Placa <br> de <br> video</a>
+                        <div class="contai-all" id="modal5">
+                            <div class="popup">
+                                <div class="img6">
+                                </div>
+                                <div class="contai-text">
+                                    <h1> Placa de Viddeo</h1>
+                                    <p>La tarjeta gráfica o tarjeta de vídeo de un componente que viene integrado en la placa base del PC o se instala a parte para ampliar sus capacidades. Concretamente, esta tarjeta está dedicada al procesamiento de datos
+                                        relacionados con el vídeo y las imágenes que se están reproduciendo en el ordenador.</p>
+                                </div>
+
+                                <a href="#" class="btn-close-popup">X</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!---->
+            </div>
+            <div class="contBajo">
+                <div class="fuente" href="#" ondrop="drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class="tooltip">Fuente de alimentacion
+                    <span class="tooltiptext"> La fuente de poder o de alimentación (PSU en inglés) es el dispositivo que se encarga de transformar la corriente alterna de la línea eléctrica comercial que se recibe en los domicilios (220 volts en la Argentina) en corriente continua o directa
+					</span>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <script>
+            function allowDrop(ev) {
+                ev.preventDefault();
+            }
+
+            function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+            function drop(ev) {
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
+
+</body>
+
+</html>

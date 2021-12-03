@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open sans';
+    background: #151d28;
+    height: auto;
+}
+
+
+/*----------------------------------------------------*/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: aliceblue;
+    background-color: #5ba0ca;
+    border-radius: 25%;
+    padding: 5px;
+    /* If you want dots under the hoverable text */
+}
+
+
+/* Tooltip text */
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.747);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/*-------------------------------------*/
+
+a {
+    margin-left: 1em;
+    margin-right: 1em;
+    color: white;
+    padding: 1em;
+}
+
+.iso {
+    display: inline;
+    width: 25%;
+    height: 25%;
+    margin: auto;
+    padding: 2px;
+    height: 70px;
+    width: auto;
+    margin-left: 1em;
+}
+
+header,
+footer {
+    color: black;
+    padding: 1px;
+    margin: 0%;
+    text-align: center;
+}
+
+nav,
+footer {
+    background-color: #162f4b;
+    padding-bottom: 12px;
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    text-indent: justify;
+}
+
+.componentes,
+.armado {
+    background-color: #5ba0ca;
+    border-radius: 20%;
+    padding: 3%;
+}
+
+.btnImagen {
+    margin-top: 8em;
+}
+
+.lblButton {
+    display: inline;
+    padding: 3%;
+}
+
+#btn1 {
+    padding: 0.5%;
+    margin-left: 25%;
+    margin-right: 20%;
+}
+
+.lblDiv {
+    margin-top: 1em;
+    margin-bottom: 3em;
+    color: #5ba0ca;
+}
+
+.componentes:hover,
+.armado:hover {
+    background-color: #84FFFD;
+    cursor: pointer;
+}
+
+
+/*.componentes:active, .armado:active{
+  
+    border-radius: 15%;
+  
+  }*/
+
+a:hover {
+    background-color: #49BAE0;
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+    position: fixed;
+    bottom: 0;
+    text-transform: none;
+}
+
+#superiorPadre {
+    display: flex;
+    width: 100%;
+    height: 64%;
+    /*background-color: red;*/
+}
+
+#inferiorPadre {
+    display: flex;
+    width: 100%;
+    height: 36%;
+}
+
+#cont {
+    width: 700px;
+    height: 588px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/motherv2y650.png");
+}
+
+
+/*-------------------------------------------------  inicio divs de la parte de arriba de la mother-------------------------------*/
+
+.supIzquierda {
+    flex-direction: row;
+    height: 100%;
+    width: 33%;
+}
+
+.supIzqSup {
+    height: 31%;
+    width: 100%;
+}
+
+.supIzqInf {
+    display: flex;
+    margin-top: 9%;
+    height: 64%;
+    width: 100%;
+    align-items: row;
+}
+
+.pci1 {
+    margin-left: 17%;
+    width: 13%;
+}
+
+.pci2 {
+    margin-left: 10%;
+    width: 12%;
+}
+
+.pci3 {
+    margin-left: 11%;
+    width: 11%;
+}
+
+.pci4 {
+    margin-left: 12%;
+    width: 12%;
+}
+
+.supMedio {
+    width: 32%;
+    height: 100%;
+}
+
+.supDerecho {
+    width: 20%;
+    height: 40%;
+    margin-top: 28%;
+}
+
+.supDerechoProcesador {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*----------------------------------------------------------------Fin de las partes de arriba-------------------------------------*/
+
+
+/*pop up*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+
+/*procesador*/
+
+
+/*...........................................procesador...........................................*/
+
+.img1 {
+    width: 40%;
+    background-image: url(../img/procesador.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*...........................................Ram...........................................*/
+
+.img2 {
+    width: 40%;
+    background-image: url(../img/ram.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*...........................................Sata...........................................*/
+
+.img3 {
+    width: 40%;
+    background-image: url(../img/SataP.jpg);
+    background-size: cover;
+    background-position: relative;
+}
+
+
+/*...........................................Disco Rigido...........................................*/
+
+.img4 {
+    width: 40%;
+    background-image: url(../img/disc.rig.jpg);
+    background-size: cover;
+    background-position: relative;
+}
+
+
+/*...........................................Placa de video...........................................*/
+
+.img5 {
+    width: 40%;
+    background-image: url(../img/pldvi.jpg);
+    background-size: cover;
+    background-position: relative;
+}
+
+
+/*...........................................Puente Sur...........................................*/
+
+.img6 {
+    width: 40%;
+    background-image: url(../img/puente\ norte.jpg);
+    background-size: cover;
+    background-position: relative;
+}
+
+
+/*...........................................Puente Norte...........................................*/
+
+.img7 {
+    width: 40%;
+    background-image: url(../img/puente\ norte.jpg);
+    background-size: cover;
+    background-position: relative;
+}
+
+
+/*...........................................Fuente de alimentacion...........................................*/
+
+.img8 {
+    width: 40%;
+    background-image: url(../img/Fuente.png);
+    background-size: cover;
+    background-position: relative;
+}
+
+
+/*....................................................Final de los componentes..........................................*/
+
+.contai-all {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+
+.contai-all:target {
+    background: rgb (0, 0, 0);
+    visibility: visible;
+    opacity: 3;
+}
+
+.contai-all:target .popup {
+    top: 50%;
+    left: 50%;
+    /*transform: rotate(0deg) translate(-50%,-50%);*/
+    transform: rotate(0deg) translate(-80%, -20%);
+    visibility: visible;
+    /*texto de la imagen*/
+    background-color: #151d28;
+    color: blanchedalmond;
+}
+
+.popup {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    position: center;
+    display: flex;
+    top: -80%;
+    left: -80%;
+    visibility: hidden;
+    transform: rotate(90deg) translate(-75%, 170%);
+    transition: all 600ms;
+}
+
+.contai-text {
+    width: 60%;
+    padding: 50px;
+    overflow-y: auto;
+}
+
+.contai-text h1 {
+    font-size: 30px;
+}
+
+.contai-text p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.btn-close-popup {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    line-height: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .popup {
+        flex-direction: column;
+        height: 100%;
+        max-height: 800px;
+    }
+    .img1 {
+        width: 100%;
+        height: 40%;
+    }
+    .contai-text {
+        width: 100%;
+        height: 60%;
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contai-text {
+        padding: 20px;
+    }
+    .contai-text h1 {
+        font-size: 20px;
+    }
+    .contai-text p {
+        font-size: 12px;
+    }
+}
+
+
+/*----------------------------estilos de las partes de abajo de la mother   -------------------------------------------*/
+
+.infIzquierda {
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+}
+
+.infDerecha {
+    height: 50%;
+    width: 59%;
+    flex-direction: column;
+}
+
+.infDerecha1 {
+    height: 72%;
+    width: 100%;
+}
+
+.ram2 {
+    height: 22%;
+    width: 100%;
+}
+
+.ram1 {
+    margin-top: 9%;
+    height: 35%;
+    width: 100%;
+}
+
+.InfIzqSup {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    width: 100%;
+    height: 51%;
+}
+
+.sata1 {
+    margin-left: 11%;
+    width: 11%;
+    margin-top: 20%;
+    height: 46%;
+}
+
+.southbridge {
+    margin-left: 8%;
+    width: 50%;
+    height: 100%;
+}
+
+.infIzqInf {
+    margin-top: 12%;
+    width: 100%;
+    height: 28%;
+}
+
+.satas {
+    margin-left: 18%;
+    height: 86%;
+    width: 36%;
+}
+
+
+/*--------------------------------------------------------- Fin de las partes de abajo -----------------------------------------*/
+
+.contPadre {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+}
+
+.espacioIzq {
+    width: 25%;
+    height: 588px;
+}
+
+.espacioDer {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.caja {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 12%;
+    color: white;
+}
+
+.caja img {
+    height: 100%;
+    width: 20%;
+}
+
+.disco {
+    margin-top: 80%;
+    height: 45%;
+}
+
+.disco img {
+    position: relative;
+    height: 100%;
+}
+
+.contBajo {
+    height: 27%;
+    width: 100%;
+}
+
+.fuente {
+    height: 100%;
+    width: 26.5%;
+    margin-left: 46%;
+}
+
+.fuente img {
+    margin-top: -20%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
